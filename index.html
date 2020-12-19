@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Validación Formulario</title>
+</head>
+<body>
+  
+  <main>
+    <form action="" class="formulario" id="formulario">
+      <!-- Grupo usuario -->
+      <div class="formulario__grupo " id="grupo__usuario">
+          <label for="usuario" class="formulario__label">Usuario</label>
+          <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="camilo9115">
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">El usuario tiene que ser de 4 a 12 dígitos y solo puede contener números, letras y guión bajo</p>
+      </div>
+
+      <!-- Grupo nombre -->
+      <div class="formulario__grupo" id="grupo__nombre">
+        <label for="nombre" class="formulario__label">Nombre</label>
+        <div class="formulario__grupo-input">
+          <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Jhon Doe">
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </div>
+        <p class="formulario__input-error">El nombre tiene que ser de 4 a 12 dígitos y solo puede contener números, letras y guión bajo</p>
+      </div>
+
+      <!-- Grupo Contraseña -->
+      <div class="formulario__grupo" id="grupo__password">
+        <label for="password" class="formulario__label">Contraseña</label>
+        <div class="formulario__grupo-input">
+          <input type="password" class="formulario__input" name="password" id="password" placeholder="">
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </div>
+        <p class="formulario__input-error">La contraseña debe debe ser de 4 a 12 digitos, caracteres y simbolos.</p>
+      </div>
+
+      <!-- Grupo Contraseña 2 -->
+      <div class="formulario__grupo" id="grupo__password2">
+        <label for="password2" class="formulario__label">Repetir Contraseña</label>
+        <div class="formulario__grupo-input">
+          <input type="password" class="formulario__input" name="password2" id="password2" placeholder="">
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </div>
+        <p class="formulario__input-error">Las contraseñas deben ser iguales</p>
+      </div>
+
+       <!-- Grupo Correo -->
+      <div class="formulario__grupo" id="grupo__correo">
+        <label for="correo" class="formulario__label">Correo Electrónico</label>
+        <div class="formulario__grupo-input">
+          <input type="email" class="formulario__input" name="correo" id="correo" placeholder="ejemplo@ejemplo.com">
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </div>
+        <p class="formulario__input-error">El correo solo puede contener letras, numeros, guiones</p>
+      </div>
+
+       <!-- Grupo telefono -->
+      <div class="formulario__grupo" id="grupo__telefono">
+        <label for="telefono" class="formulario__label">Telefono</label>
+        <div class="formulario__grupo-input">
+          <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="3004586696">
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </div>
+        <p class="formulario__input-error">el telefono solo puede tener numeros</p>
+      </div>
+
+      <!-- Grupo terminos y condiciones  -->
+      <div class="formulario__grupo" id="grupo__terminos">
+        <label for="terminos" class="formulario__label">
+          <input type="checkbox" class="formulario__checkbox" id="terminos" name="terminos">Acepto los Terminos y Condiciones
+        </label>
+      </div>
+
+      <div class="formulario__mensaje" id="formulario__mensaje">
+        <p><i class="fas fa-exclamation-triangle"></i><b> Error: </b>Digita los datos del formulario correctamente</p>
+      </div>
+
+      <div class="formulario__grupo formulario__grupo-btn-enviar">
+        <button type="submit" class="formulario__btn">Enviar</button>
+        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">El formulario se envió con exito</p>
+      </div>
+    </form>
+  </main>
+
+  <script src="https://kit.fontawesome.com/965fd55b5e.js" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
